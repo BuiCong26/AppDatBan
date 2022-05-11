@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    android:layout_margin="10dp"
+    tools:context=".ChitietDatban">
+    <TextView
+        android:id="@+id/txtChitietDatban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chi Tiết Đặt Bàn"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/txtNgayOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtChitietDatban"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Ngày đặt bàn"/>
+    <TextView
+        android:id="@+id/txtNgayOrders1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtNgayOrders"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Ngày đặt bàn"/>
+    <TextView
+        android:id="@+id/txtidBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtNgayOrders1"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Id Bàn"/>
+    <TextView
+        android:id="@+id/txtidBan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtidBan"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Id Bàn"/>
+    <TextView
+        android:id="@+id/txtidKH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtidBan1"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Id Khách Hàng"/>
+    <TextView
+        android:id="@+id/txtidKH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtidKH"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Id Khách Hàng"/>
+    <TextView
+        android:id="@+id/txtidMonAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtidKH1"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Id Món Ăn"/>
+    <TextView
+        android:id="@+id/txtidMonAn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtidMonAn"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Id Món Ăn"/>
+    <TextView
+        android:id="@+id/txtGhiChu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtidMonAn1"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:text="Ghi chú"/>
+    <EditText
+        android:id="@+id/edtGhiChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtGhiChu"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnXacNhan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Xác Nhận"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/edtGhiChu"/>
+    <TextView
+        android:id="@+id/txtidOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnXacNhan1"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
